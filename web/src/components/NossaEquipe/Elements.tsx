@@ -16,9 +16,9 @@ export interface CardProps {
 
 function Titulo() {
   return (
-    <h1 className="text-4xl font-bold text-center">
+    <h2 className="text-4xl font-bold text-center">
       Conheça nossa equipe de liderança
-    </h1>
+    </h2>
   );
 }
 
@@ -36,7 +36,7 @@ function Card({ nome, area, cargo, imagem, icones }: CardProps) {
       <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-2">
         <Image src={imagem} alt={nome} width={100} height={100} priority />
       </div>
-      <h2 className="text-xl font-semibold text-[20px]">{nome}</h2>
+      <h3 className="text-xl font-semibold text-[20px]">{nome}</h3>
       <p className="font-normal text-[18px] break-words">{area}</p>
       <p className="font-normal text-[18px] break-words">{cargo}</p>
       <div className="flex justify-center space-x-2 mt-4">
